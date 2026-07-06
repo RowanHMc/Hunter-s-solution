@@ -72,3 +72,51 @@ button:hover, .property-buttons a:hover, .hero-btn:hover{
     height: 230px;
     object-fit:cover;
 }
+.property-card, .service-card, .feature-card{
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+.property-card:hover, .service-card:hover, .feature-card:hover{
+    transform: translateY(-8px);
+}
+.property-details{
+    padding: 20px;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    }
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.logo h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.logo span{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.nav-links{
+    display: flex;
+    align-items: ;
+}
