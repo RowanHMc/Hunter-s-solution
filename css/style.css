@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    }
+button, input, select, textarea{
+    font-family: inherit;
+}
+
+:root{
+    --primary-color:#2563EB;
+    --primary-dark:#1D4ED8;
+    --secondary-color:#F59E0B;
+    --dark:#1F2937;
+    --light:#F9FAFB;
+    --white:#FFFFFF;
+    --gray:#6B7280;
+    --border:#E5E7EB;
+    --shadow:0 8px 20px rgba(0,0,0,.1);
+    --transition:.3s ease;
+    --radius:12px;
+}
