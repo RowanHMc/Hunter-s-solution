@@ -216,8 +216,8 @@ header {
 }
 
 .hero {
-    background-image: url(assets\bg image.jpg);
     background-size: cover;
+    background: url(/assets/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     min-height: 90vh;
@@ -225,6 +225,108 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
-
+.hero .overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+.hero-content{
+    position: relative;
+      z-index:2;
+    width:90%;
+    max-width:1100px;
+    text-align:center;
+    color:var(--white);
+}
+.hero-content h1{
+    font-size:3.8rem;
+    font-weight:700;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+.hero-content p{
+    max-width:700px;
+    margin:0 auto 40px;
+    font-size:1.2rem;
+    color:#f3f4f6;
+}
+.about-hero{
+    position: relative;
+    min-height: 60vh;
+    background: url("/assets/hero-bg.jpg") center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.about-hero .overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.services-hero{
+    position: relative;
+    min-height: 60vh;
+    background: url("../assets/hero-bg.jpg") center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.services-hero .overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    margin: 40px auto 0;
+    padding: 18px 20px;
+    width: 100%;
+    max-width: 1000px;
+    background: var(--white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+.search-input{
+    flex: 2;
+    padding: 14px 18px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #f5f5f5;
+    font-size: 1rem;
+}
+.search-bar select{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#f5f5f5;
+    cursor:pointer;
+    font-size:.95rem;
+}
+.search-input:focus,
+.search-bar select:focus{
+    outline:2px solid var(--primary-color);
+    background:var(--white);
+}
+.search-bar select:hover{
+    background:#ebf2ff;
+    transition:.3s;
+}
 

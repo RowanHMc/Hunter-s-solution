@@ -29,9 +29,8 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact">Contact</a></li>              
-                <li><a href="login.html" class="login-btn">Login</a><li>
+                <li><a href="services.html">Services</a></li>              
+                <li><a href="login.html" class="login-btn">Login</a></li>
 
             </ul>
             <input type="checkbox" id="menu-toggle">
@@ -40,148 +39,150 @@
             </label>
         </nav>
     </header>
+
     <main>
-        <section id="home" class="hero"></section>
-        <section class="featured-properties"></section>
-        <section class="informarion-section"></section>
+        <!-- Home / Hero Section Nested Here -->
+        <section id="home" class="hero">
+            <div class="overlay">
+                <div class="hero-content">
+                    <h1>Find Your Perfect Home.</h1>
+                    <p>Smart search, better finds, great living.</p>
+                    <div class="search-bar">
+                        <div class="search-input">
+                            <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                            <input type="text" placeholder="Search by keyword">
 
-    </main>
-    <section id="home" class="hero">
-        <div class="overlay">
-            <div class="hero-content">
-                <h1>Find Your Perfect Home.</h1>
-                <p>Smart search, better finds, great living.</p>
-                <div class="search-bar">
-                    <div class="search-input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Search by keyword">
-
+                        </div>
+                        <select>
+                            <option>Location</option>
+                            <option>Nairobi</option>
+                            <option>Kisumu</option>
+                            <option>Mombasa</option>
+                            <option>Nakuru</option>
+                        </select>
+                        <select>
+                            <option>Bedrooms</option>
+                            <option>2 Bedrooms</option>
+                            <option>3 Bedrooms</option>
+                        </select>
+                        <select>
+                            <option>Price Range</option>
+                            <option>Ksh 20,000 - 30,000</option>
+                            <option>Ksh 30,000 - 40,000</option>
+                            <option>Ksh 40,000 - 50,000</option>
+                        </select>
                     </div>
-                    <select>
-                        <option>Location</option>
-                        <option>Nairobi</option>
-                        <option>Kisumu</option>
-                        <option>Mombasa</option>
-                        <option>Nakuru</option>
-                    </select>
-                    <select>
-                        <option>Bedrooms</option>
-                        <option>2 Bedrooms</option>
-                        <option>3 Bedrooms</option>
-                    </select>
-                    <select>
-                        <option>Price Range</option>
-                        <option>Ksh 20,000 - 30,000</option>
-                        <option>Ksh 30,000 - 40,000</option>
-                        <option>Ksh 40,000 - 50,000</option>
-                    </select>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="featured-properties">
-        <div class="section-heading">
-            <h2>Featured Homes</h2>
-            <a href="#">View All</a>
-        </div>
-        <div class="property-grid">
+        </section>
 
-        </div>
-    </section>
-    <article class="property-card">
-        <img src="assets\apt1.jpg" alt="Modern Apartment">
-        <div class="property-details">
-            <h3>Modern 3 Bedroom House</h3>
-            <p><i class="fa-solid fa-location-dot"></i>Parklands, Nairobi</p>
-            <h4>ksh 55,000 / month</h4>
-            <div class="property-buttons">
-                <a href="#">Check Availability</a>
-                <a href="#contact">Contact Us</a>
+        <!-- Featured Properties Section with Cards Placed in the Grid -->
+        <section class="featured-properties">
+            <div class="section-heading">
+                <h2>Featured Homes</h2>
+                <a href="#">View All</a>
             </div>
-        </div>
-    </article>
-    <article class="property-card">
-        <img src="assets\apt2.jpg" alt="Modern Apartment">
-        <div class="property-details">
-            <h3>Kwetu Kwetu Residence, 2 bedrooms</h3>
-            <p><i class="fa-solid fa-location-dot"></i>ABC, Nairobi</p>
-            <h4>ksh 40,000 / month</h4>
-            <div class="property-buttons">
-                <a href="#">Check Availability</a>
-                <a href="#contact">Contact Us</a>
+            <div class="property-grid">
+                <article class="property-card">
+                    <img src="assets\apt1.jpg" alt="Modern Apartment">
+                    <div class="property-details">
+                        <h3>Modern 3 Bedroom House</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Parklands, Nairobi</p>
+                        <h4>ksh 55,000 / month</h4>
+                        <div class="property-buttons">
+                            <a href="#">Check Availability</a>
+                            <a href="#contact">Contact Us</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card">
+                    <img src="assets\apt2.jpg" alt="Modern Apartment">
+                    <div class="property-details">
+                        <h3>Kwetu Kwetu Residence, 2 bedrooms</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>ABC, Nairobi</p>
+                        <h4>ksh 40,000 / month</h4>
+                        <div class="property-buttons">
+                            <a href="#">Check Availability</a>
+                            <a href="#contact">Contact Us</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="property-card">
+                    <img src="assets\apt6.jpeg" alt="Modern Apartment">
+                    <div class="property-details">
+                        <h3>Hapa Kule Apartments, 2 bedrooms</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Chiromo, Nairobi</p>
+                        <h4>ksh 30,000 / month</h4>
+                        <div class="property-buttons">
+                            <a href="#">Check Availability</a>
+                            <a href="#contact">Contact Us</a>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </div>
-    </article>
-    <article class="property-card">
-        <img src="assets\apt6.jpeg" alt="Modern Apartment">
-        <div class="property-details">
-            <h3>Hapa Kule Aoartments, 2 bedrooms</h3>
-            <p><i class="fa-solid fa-location-dot"></i>Chiromo, Nairobi</p>
-            <h4>ksh 30,000 / month</h4>
-            <div class="property-buttons">
-                <a href="#">Check Availability</a>
-                <a href="#contact">Contact Us</a>
-            </div>
-        </div>
-    </article>
-    <section class="information-section">
-        <article id="schedule" class="schedule-card">
-            <h2>schedule Viewing</h2>
-            <p>Fill in the form and we'll get back to you</p>
-            <form>
-                <input type="text" placeholder="Full Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="date">
-                <textarea placeholder="Message (Optional)"></textarea>
-                <button type="Submit">Schedule Viewing</button>
-            </form>
-        </article>
-        <article id="contact" class="contact-card">
-            <h2>Need to talk to us?</h2>
-            <p>We're just a phone call or message away</p>
-            <div class="contact-option">
-                <i class="fa-solid fa-phone"></i>
-                <span>Call Us Now</span>
-            </div>
-            <div class="contact-option">
-                <i class="fa-brands fa-whatsapp"></i>
-                <span>Whatsapp Us</span>
-            </div>
-        </article>
-        <article id="reviews" class="reviews-card">
-            <h2>What Our clients Say</h2>
-            <div class="review">
-                <h4>Majembe Nyanganya</h4>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>Once I put my trust in Hunter's Solutions, I got my ideal apartment with minimal effort and lesser
-                    time.</p>
+        </section>
 
-            </div>
-            <div class="review">
-                <h4>Mbavu Destroyer</h4>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+        <!-- Information Section (Forms, Contact, Reviews) Nested Here -->
+        <section class="information-section">
+            <article id="schedule" class="schedule-card">
+                <h2>schedule Viewing</h2>
+                <p>Fill in the form and we'll get back to you</p>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="date">
+                    <textarea placeholder="Message (Optional)"></textarea>
+                    <button type="submit">Schedule Viewing</button>
+                </form>
+            </article>
+            <article id="contact" class="contact-card">
+                <h2>Need to talk to us?</h2>
+                <p>We're just a phone call or message away</p>
+                <div class="contact-option">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Us Now</span>
                 </div>
-                <p>Just amazing, professsional, curteous and efficient</p>
-            </div>
-        </article>
-    </section>
+                <div class="contact-option">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Whatsapp Us</span>
+                </div>
+            </article>
+            <article id="reviews" class="reviews-card">
+                <h2>What Our clients Say</h2>
+                <div class="review">
+                    <h4>Majembe Nyanganya</h4>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Once I put my trust in Hunter's Solutions, I got my ideal apartment with minimal effort and lesser
+                        time.</p>
+
+                </div>
+                <div class="review">
+                    <h4>Mbavu Destroyer</h4>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Just amazing, professsional, curteous and efficient</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
     <footer>
-
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="images/logo.png" alt="Hunter's Solutions Logo">
+                <i class="fa-solid fa-house"></i>
                 <h3>Hunter's Solutions</h3>
             </div>
             <div class="footer-social">
@@ -192,10 +193,9 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About Us</a></li>
-                    <li><a href="services">Services</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="reviews">Reviews</a></li>
                 </ul>
 
@@ -205,15 +205,8 @@
                 <p><i class="fa-solid fa-phone"></i> +254 790 898 841</p>
                 <p><i class="fa-solid fa-envelope"></i> huntersolns@co.ke</p>
             </div>
-
         </div>
-
     </footer>
-
-
-
-
-
 </body>
 
 </html>
