@@ -1,15 +1,10 @@
-/*==================================
-        CSS RESET
-==================================*/
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-html{
-    scroll-behavior:smooth;
-}
+
+
 img{
     display:block;
     width:100%;
@@ -29,10 +24,6 @@ textarea{
     border:none;
     outline:none;
 }
-/*==================================
-        ROOT VARIABLES
-==================================*/
-
 :root{
     --primary:#2563eb;
     --primary-dark:#1d4ed8;
@@ -43,14 +34,10 @@ textarea{
     --gray:#6b7280;
     --border:#e5e7eb;
    --shadow:0 8px 25px rgba(0,0,0,.12);
-    --radius:12px;
-    --transition:.3s ease;
+    --radius: 12px;
+    --transition:.5s ease;
     --container:1200px;
 }
-/*==================================
-        GLOBAL STYLES
-==================================*/
-
 body{
     font-family:"Poppins",sans-serif;
     color:var(--dark);
@@ -76,9 +63,7 @@ h4{
 p{
     color:var(--gray);
 }
-/*==================================
-        HEADER & NAVIGATION
-==================================*/
+
 header{
     position: fixed;
     top: 0;
@@ -166,9 +151,6 @@ header{
 .login-btn::after{
     display: none;
 }
-/*==================================
-        HERO SECTIONS
-==================================*/
 .hero,
 .about-hero,
 .services-hero{
@@ -228,31 +210,6 @@ header{
     color:var(--white);
     font-size:.95rem;
 }
-.breadcrumb a{
-    color:var(--white);
-
-    transition:var(--transition);
-}
-.breadcrumb a:hover{
-    color:var(--secondary);
-}
-.hero-content{
-    animation:fadeUp .8s ease;
-}
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-/*==================================
-        SECTION TITLES
-==================================*/
-
 .section-title{
     display: flex;
     justify-content: space-between;
@@ -267,15 +224,7 @@ header{
     color: var(--dark);
     position: relative;
 }
-.section-title h2::after{
-    content: "";
-    display: block;
-    width: 70px;
-    height: 4px;
-    background: var(--primary);
-    margin-top: 10px;
-    border-radius: 20px;
-}
+
 .section-title a{
     color: var(--primary);
     font-weight: 600;
@@ -285,25 +234,7 @@ header{
 .section-title a:hover{
     color: var(--primary-dark);
 }
-/*==================================
-        UNIVERSAL CARDS
-==================================*/
 
-.property-card,
-.about-card,
-.mission-card,
-.feature-card,
-.service-card,
-.process-card,
-.schedule-card,
-.contact-card,
-.review-card{
-    background: var(--white);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-    transition: var(--transition);
-}
 .property-card:hover,
 .about-card:hover,
 .mission-card:hover,
@@ -328,17 +259,7 @@ header{
     color: var(--dark);
     margin-bottom: 15px;
 }
-.property-card p,
-.about-card p,
-.mission-card p,
-.feature-card p,
-.service-card p,
-.process-card p,
-.schedule-card p,
-.contact-card p,
-.review-card p{
-    color: var(--gray);
-}
+
 .feature-card i,
 .service-card i,
 .process-card i,
@@ -376,9 +297,6 @@ header{
 .review-card{
     padding:35px;
 }
-/*==================================
-        GRID & LAYOUTS
-==================================*/
 
 .property-grid{
     display:grid;
@@ -421,7 +339,6 @@ header{
     display:flex;
     align-items:center;
     gap:15px;
-
     margin-top:20px;
 }
 .review{
@@ -441,13 +358,9 @@ header{
     display:grid;
     grid-template-columns:2fr repeat(3,1fr);
     gap:15px;
-
     background:rgba(255,255,255,.95);
-
     padding:20px;
-
     border-radius:var(--radius);
-
     box-shadow:var(--shadow);
 }
 .search-input{
@@ -456,7 +369,7 @@ header{
 }
 .search-input input{
     flex:1;
-    padding:15px;
+    align-items: center;
 }
 .search-bar select{
     padding:15px;
@@ -464,7 +377,7 @@ header{
     border:1px solid var(--border);
     background:var(--white);
 }
-.search-btn,
+
 .property-buttons a,
 .login-form button,
 .register-form button,
@@ -473,18 +386,12 @@ header{
     align-items:center;
     justify-content:center;
     gap:10px;
-
     padding:14px 24px;
-
     background:var(--primary);
     color:var(--white);
-
     border-radius:var(--radius);
-
     font-weight:600;
-
     cursor:pointer;
-
     transition:var(--transition);
 }
 .search-btn:hover,
@@ -511,15 +418,10 @@ header{
 .schedule-card textarea,
 .search-bar select{
     width:100%;
-
     padding:15px;
-
     border:1px solid var(--border);
-
     border-radius:var(--radius);
-
     margin-bottom:18px;
-
     transition:var(--transition);
 }
 .login-form input:focus,
@@ -537,23 +439,19 @@ header{
 .login-container,
 .register-container{
     max-width:500px;
-
     margin:auto;
-
     background:var(--white);
-
     padding:40px;
-
-    border-radius:var(--radius);
-
+   border-radius:var(--radius);
     box-shadow:var(--shadow);
+}
+.about-down {
+    margin-top: 5rem;
 }
 .login-form label,
 .register-form label{
-    display:block;
-
+   display:block;
     margin-bottom:8px;
-
     font-weight:600;
 }
 .login-form,
@@ -591,12 +489,9 @@ footer{
 .footer-container{
     width: min(90%, var(--container));
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-
     gap: 40px;
-
     padding: 60px 0;
 }
 .footer-logo{
@@ -629,9 +524,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 10px;
-
     margin-bottom: 15px;
-
     color: #d1d5db;
 }
 .footer-contact i{
@@ -644,22 +537,16 @@ footer{
 .footer-social a{
     width: 45px;
     height: 45px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 50%;
-
     background: rgba(255,255,255,.08);
-
     color: var(--white);
-
     transition: var(--transition);
 }
 .footer-social a:hover{
     background: var(--primary);
-
     transform: translateY(-4px);
 }
 footer{
@@ -668,27 +555,16 @@ footer{
     color: var(--white);
     margin-top: 80px;
 }
-/*==================================
-        RESPONSIVE DESIGN
-==================================*/
-
 @media (max-width: 768px){
  .nav-links{
     display:none;
-
     position:absolute;
-
     top:100%;
     left:0;
-
     width:100%;
-
     background:var(--white);
-
     flex-direction:column;
-
     padding:25px;
-
     box-shadow:var(--shadow);
 }
  .hamburger{
@@ -700,7 +576,6 @@ footer{
 .hero{
     min-height:80vh;
 }
-
 .about-hero,
 .services-hero{
     min-height:50vh;

@@ -53,6 +53,12 @@ This project demonstrates:
 - Reusable UI components
 - Multi-page website development
 
+## Figma Design Link
+ https://www.figma.com/design/oIppNoj2KLuMQxKjieHuwo/Untitled?node-id=0-1&p=f&t=08mkE6fvOB4faAMD-0
+
+## Power Point Presentation Link
+https://1drv.ms/p/c/8861886c4d95b6cd/IQBeDFdHsV-oSqB8QWmgKspXAekDhHx58abQB76E2gQb8vg?e=j3Bjzt 
+
 ## Author
 
 **Rowan Hadegu**
